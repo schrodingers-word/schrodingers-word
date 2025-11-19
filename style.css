@@ -329,3 +329,15 @@ a{color:var(--accent);}
   border-radius: 8px;
   border-left: 4px solid var(--accent);
 }
+/* ===== GHOST BUTTON STYLING ===== */
+.btn.ghost {
+  background: transparent;
+  border: 2px solid rgba(15, 107, 253, 0.12);
+  color: var(--heading);
+}
+
+.btn.ghost:hover {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: white;
+  border-color: transparent;
+}

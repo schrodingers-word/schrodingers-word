@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pako Fain Mojuta — Portfolio</title>
+  <meta name="description" content="Portfolio of Pako Fain Mojuta — aspiring industrial automation & instrumentation engineer." />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">Pako Fain Mojuta</div>
+        <div class="tag">Industrial Automation • Computer Systems Engineering</div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#cv">CV</a>
+        <a href="#academic">Academic</a>
+        <a href="#group">Group Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#letter">Letter</a>
+        <a href="#email">Email</a>
+        <a href="#tips">Study Tips</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Pako Fain Mojuta</span></h1>
+          <p class="lead">BSc Hons Computer Systems Engineering — aspiring Industrial Automation & Instrumentation specialist from Selebi Phikwe, Botswana.</p>
+          <p>I build reliable systems that keep machinery running — I enjoy hiking, gaming, cooking, and football. I combine discipline with a growth mindset and practical skills in web dev, Office automation, and instrumentation basics.</p>
+          <div class="cta-row">
+            <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+            <a class="btn ghost" href="#skills">See Skills</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <!-- Your Profile Photo -->
+          <img src="assets/profile.jpg" alt="Pako Fain Mojuta - Professional Photo" id="profileImage">
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section container">
+      <h2>Curriculum Vitae</h2>
+      <div class="cv-grid card">
+        <div>
+          <h3>Contact</h3>
+          <p>Email: <strong>fainmojuta@gmail.com</strong><br>Phone: <strong>+267 77950322</strong><br>Hometown: Selebi Phikwe, Botswana</p>
+
+          <h3>Professional Summary</h3>
+          <p>Practical Computer Systems Engineering student focused on industrial automation and instrumentation. Skilled in HTML, CSS, JavaScript, Excel/VBA, Access, Adobe Illustrator, and power tools operation. Reliable and experienced in small-business financial tasks.</p>
+
+          <h3>Work Experience</h3>
+          <p><strong>Shopkeeper, Family Supermarket</strong> — handled accounts, daily deposits, sales tracking and basic bookkeeping.</p>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li>BSc Hons Computer Systems Engineering — Botswana Accountancy College (current)</li>
+            <li>BIUST — Chemical Engineering (2022)</li>
+            <li>Selebi Phikwe Senior Secondary School — BGCSE</li>
+          </ul>
+
+          <h3>Technical Skills</h3>
+          <ul class="skill-list">
+            <li>HTML • CSS • JavaScript</li>
+            <li>Excel, Access, PowerPoint, Word, VBA</li>
+            <li>Adobe Illustrator (vector & simple animation)</li>
+            <li>Power Tools Operation & Maintenance</li>
+            <li>Database basics</li>
+          </ul>
+
+          <div class="download-box">
+            <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Open CV</a>
+            <a class="btn ghost" href="assets/letter.pdf" target="_blank" rel="noopener">Open Application Letter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC REFLECTION -->
+    <section id="academic" class="section container card">
+      <h2>Academic Reflection</h2>
+      <p>I attended BIUST for Chemical Engineering in 2022 but struggled academically. I learned that attendance, discipline and structured study are non-negotiable. At Botswana Accountancy College I reset my approach: strict timetable, prioritise weak areas, never miss lectures and balance with hiking & football to maintain focus.</p>
+      
+      <!-- Hiking Image -->
+      <div class="personal-image">
+        <img src="assets/hiking.jpg" alt="Pako hiking in nature" class="clickable" data-full="assets/hiking.jpg">
+        <p class="image-caption">Hiking helps me maintain balance and clear thinking</p>
+      </div>
+    </section>
+
+    <!-- GROUP WORK -->
+    <section id="group" class="section container card">
+      <h2>Group Work — Tuckman's Model</h2>
+      <ul>
+        <li><strong>Forming:</strong> spontaneous team creation; initial task division.</li>
+        <li><strong>Storming:</strong> challenges — internet, power cuts, inconsistent participation.</li>
+        <li><strong>Norming:</strong> clarified roles, backup plans, progress tracking.</li>
+        <li><strong>Performing:</strong> effective delivery and shared troubleshooting.</li>
+        <li><strong>Adjourning:</strong> reflection and lessons learned.</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS & PROJECTS -->
+    <section id="skills" class="section container">
+      <h2>Skills & Projects</h2>
+
+      <!-- Interactive Skills Demo -->
+      <div class="interactive-demo card">
+        <div class="demo-header">
+          <h3>🚀 Live Skills Matrix</h3>
+          <button class="run-btn" onclick="runSkillsDemo()">▶ Run Code</button>
+        </div>
+        
+        <div class="demo-container">
+          <div class="code-panel">
+            <pre><code>// Interactive Skills Matrix
+const skills = [
+  { name: "HTML/CSS", level: 85 },
+  { name: "JavaScript", level: 70 },
+  { name: "VBA/Excel", level: 80 },
+  { name: "Power Tools", level: 75 },
+  { name: "Adobe Illustrator", level: 75 }
+];
+
+function animateSkills() {
+  skills.forEach((skill, index) => {
+    const bar = document.getElementById(skill.name);
+    bar.style.width = skill.level + '%';
+    animateCounter(skill.name, skill.level);
+  });
+}</code></pre>
+          </div>
+          
+          <div class="output-panel" id="skillsOutput">
+            <p class="demo-placeholder">Click "Run Code" to see the animation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-cards">
+        <div class="skill-block card">
+          <h3>💼 Microsoft Office & VBA</h3>
+          <p>Advanced proficiency in Excel, Access, Word, and PowerPoint with VBA automation. Created automated sales tracking systems and data processing macros that improved efficiency by 40% in family business operations.</p>
+          <ul class="skill-tags">
+            <li>Excel Automation</li>
+            <li>Access Databases</li>
+            <li>VBA Scripting</li>
+            <li>Data Analysis</li>
+          </ul>
+        </div>
+
+        <div class="skill-block card">
+          <h3>🌐 Web Development</h3>
+          <p>Front-end development with HTML, CSS, and JavaScript. Built responsive websites and interactive web applications. This portfolio demonstrates my coding capabilities with live interactive elements.</p>
+          <ul class="skill-tags">
+            <li>HTML5/CSS3</li>
+            <li>JavaScript ES6+</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+
+        <div class="skill-block card">
+          <h3>🔧 Power Tools & Practical Skills</h3>
+          <p>Experienced with various power tools including angle grinders, drills, and saws. Comfortable with hands-on work and equipment maintenance, complementing my technical engineering knowledge.</p>
+          <div class="skill-image">
+            <img src="assets/power-tools.jpg" alt="Using power tools - disk grinder" class="clickable" data-full="assets/power-tools.jpg">
+            <p class="image-caption">Practical experience with power tools and equipment</p>
+          </div>
+          <ul class="skill-tags">
+            <li>Angle Grinders</li>
+            <li>Power Drills</li>
+            <li>Equipment Maintenance</li>
+            <li>Hands-on Work</li>
+          </ul>
+        </div>
+
+        <div class="skill-block card">
+          <h3>🎨 Digital Design</h3>
+          <p>Created animated graphics and vector illustrations using Adobe Illustrator. Designed visual content for presentations and digital projects, combining technical skills with creative design.</p>
+          <ul class="skill-tags">
+            <li>Adobe Illustrator</li>
+            <li>Vector Graphics</li>
+            <li>Animation</li>
+            <li>UI/UX Principles</li>
+          </ul>
+        </div>
+
+        <div class="skill-block card">
+          <h3>🏭 Industrial Systems</h3>
+          <p>Foundational knowledge in industrial automation and instrumentation. Studying computer systems engineering with focus on programming industrial machinery and control systems.</p>
+          <ul class="skill-tags">
+            <li>PLC Programming</li>
+            <li>Instrumentation</li>
+            <li>Control Systems</li>
+            <li>System Integration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="section container card">
+      <h2>Application Letter</h2>
+      <div class="letter-block">
+        <p><strong>TechAvast Solutions</strong><br>Gaborone, Botswana</p>
+        <p><strong>Subject:</strong> Application for Industrial Attachment</p>
+        <p>Dear Hiring Manager,</p>
+        <p>I am writing to apply for an industrial attachment position in your Industrial Automation team. I am currently pursuing BSc Hons Computer Systems Engineering at Botswana Accountancy College... (full letter is in the attached PDF).</p>
+        <div class="download-box">
+          <a class="btn" href="assets/letter.pdf" target="_blank" rel="noopener">Download Letter (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMAIL TEMPLATE -->
+    <section id="email" class="section container card">
+      <h2>Professional Email Template</h2>
+      <pre class="email-template">
+Subject: Application for Industrial Attachment – Pako Fain Mojuta
+
+Dear [Hiring Manager],
+
+I hope you are well. My name is Pako Fain Mojuta, a first-year BSc Hons Computer Systems Engineering student at Botswana Accountancy College. I am writing to express my interest in the industrial attachment opportunity at your company.
+
+I have developed skills in web development, Microsoft Office automation, power tools operation, and database management through my coursework and practical experience. I am particularly drawn to your company's work in industrial automation and believe my technical background would allow me to contribute effectively to your team.
+
+Please find my CV and application letter attached for your review. I am available for an interview at your earliest convenience and look forward to discussing how I can contribute to your organization.
+
+Thank you for your time and consideration.
+
+Sincerely,
+Pako Fain Mojuta
+fainmojuta@gmail.com
++267 77950322
+      </pre>
+    </section>
+
+    <!-- STUDY TIPS -->
+    <section id="tips" class="section container card">
+      <h2>Study Tips</h2>
+      <ul>
+        <li>Kinesthetic learning: study while folding clothes or with a Rubik's cube.</li>
+        <li>Use NotebookLM to convert lecture slides into audio summaries.</li>
+        <li>Feynman technique: teach what you learn out loud.</li>
+        <li>Digital flashcards & spaced repetition.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Pako Fain Mojuta — Selebi Phikwe, Botswana</p>
+      <p><a href="mailto:fainmojuta@gmail.com">fainmojuta@gmail.com</a> • +267 77950322</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox modal (hidden by default) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close">✕</button>
+    <img id="lightboxImg" src="" alt="Expanded image">
+  </div>
+</body>
+</html>
